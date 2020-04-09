@@ -1,0 +1,36 @@
+一、安装Koa2
+1、npm install koa-generator -g
+2、Koa2 blog-koa2 //创建目录 blog-koa2。 blog-koa2目录下会出现一些文件
+3、npm install & npm run dev
+
+二、安装mongoose
+1、npm install mongoose
+2、创建dbs文件夹，及dbs里面的文件
+3、app.js中引入
+const dbConfig = require('./dbs/config')
+const mongoose = require('mongoose')
+4、启用mongoose
+mongoose.connect(dbConfig.dbs,{
+   useNewUrlParser:true
+   },function(err){
+     if(err){
+        console.log('Connection Error:' + err)
+     }else{
+        console.log('Connection success!')
+  }
+})
+
+三、mongod配置启动
+1：MongoDB安装目录的bin目录下执行：
+
+mongod --dbpath "D:\Program Files\MongoDB\Server\3.6\data\db" --logpath "D:\Program Files\MongoDB\Server\3.6\data\log\MongoDB.txt" --install --serviceName "MongoDB"
+
+说明：
+
+--dbpath：指定MongoDB的数据库目录
+
+--logpath:日志目录
+
+--install:做成windows的服务
+
+--serviceName: 做成windows的服务的名称
