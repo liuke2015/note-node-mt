@@ -1,0 +1,43 @@
+一、安装redis
+1、安装教程：https://www.runoob.com/redis/redis-install.html、
+2、下载地址：https://github.com/microsoftarchive/redis/releases
+3、启动命令：打开一个 cmd 窗口 使用 cd 命令切换目录到 C:\redis 运行：
+redis-server.exe redis.windows.conf
+
+二、安装koa-generic-session koa-redis
+npm install koa-generic-session koa-redis
+
+三、在app.js中引入、配置
+const session = require('koa-generic-session')
+const Redis = require('koa-redis')
+
+app.use(session({
+key:"mt",//session的key
+prefix:"mtpr",//session的value的前缀
+store:new Redis()
+}))
+
+四、操作session
+在中间件中，ctx.session.count++
+
+五、查看redis里存储的内容
+1、命令:redic-cli 回车
+2、key * //显示所有的key值
+3、get value
+
+六、直接操作redis
+
+1、创建接口(user.js)
+const Redis = require('koa-redis')
+
+const store =new Redis().client//客户端
+
+router.get('/fix',async function (ctx,next) {
+await store.hset("fix","name",Math.random())//hset-redis的一个方法
+ctx.body={
+code:0
+}
+})
+
+2、测试
+curl http://127.0.0.1:2000/users/fix

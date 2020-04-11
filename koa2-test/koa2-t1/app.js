@@ -5,6 +5,8 @@ const json = require('koa-json')
 const onerror = require('koa-onerror')
 const bodyparser = require('koa-bodyparser')
 const logger = require('koa-logger')
+const session = require('koa-generic-session')
+const Redis = require('koa-redis')
 
 const pv = require('./middleware/koa-pv')
 const m1 = require('./middleware/m1')
@@ -19,16 +21,21 @@ const users = require('./routes/users')
 
 // error handler
 onerror(app)
-
+app.keys=['keys','keyskeys']
+app.use(session({
+    key:"mt",//session的key
+    prefix:"mtpr",//session的value的前缀
+    store:new Redis()
+}))
 // middlewares
 app.use(bodyparser({
     enableTypes: ['json', 'form', 'text']
 }))
 
-/*app.use(pv())
+app.use(pv())
 app.use(m1())
 app.use(m2())
-app.use(m3())*/
+app.use(m3())
 app.use(json())
 app.use(logger())
 app.use(require('koa-static')(__dirname + '/public'))
