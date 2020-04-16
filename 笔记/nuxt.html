@@ -1,0 +1,71 @@
+一、安装nuxt.js
+    1、地址：https://github.com/nuxt-community/koa-template
+    2、???? 该命令依赖vue-cli
+       安装vue-cli3:npm install  @vue/cli  -g
+                    npm install -g @vue/cli-init
+    2、安装命令：
+
+       vue init nuxt-community/koa-template <project-name>
+       cd nuxt-learn
+       npm install # Or yarn
+       npm run dev
+    3、npm install之后，如果看到 --update-binary 要重新执行一遍安装
+       npm install --update-binary
+    4、安装完--update-binary之后，如果有提示 requires a peer of ajv@^6.0.0.0 再安装一遍
+      npm i ajv@^6
+    5、npm run dev后报错：
+       Cannot find module 'D:\liuke\note-node-mt\nuxt-learn\build\main.js'
+       解决办法：
+          npm i backpack-core@latest eslint-loader@latest -D
+    6、工具补充：nrm use npm
+    7、如果eslint校验html有问题,重新安装
+       npm i eslint-plugin-html@^3 -D
+
+二、组件
+    1、页面组件：pages/
+    2、模板组件：layouts/
+    3、普通组件：components/
+
+三、配置文件：
+    nuxt.config.js
+
+四、接口
+    1、入口文件：server/index.js
+    2、新建：interface/city.js
+    3、npm install koa-router
+    4、在server/index.js中引入city.js
+       import cityInterface from './interface/city'
+       app.use(cityInterface.routes()).use(cityInterface.allowedMethods())
+    5、测试：
+       gitbash或者powershell中输入：curl http://localhost:3000/city/list
+
+五、页面中调用接口
+    1、pages/search.vue
+    2、安装axios:npm i axios
+
+六、asyncData()和fetch()
+    1、asyncData()处理组件数据（data里的数据）
+    2、fetch()处理vuex的数据
+    <script>
+        export default {
+            async asyncData() {
+                let {status, data: {list}} = await axios.get('http://localhost:3000/city/list')
+                if (status === 200) {
+                    return {
+                        list
+                    }
+                }
+            },
+            async fetch ({ store, params }) {
+                let { data } = await axios.get('http://my-api/stars')
+                store.commit('setStars', data)
+            }
+        }
+    </script>
+
+七、store
+    1、新建 store、store/index.js
+    2、新建 store/modules、store/modules/city.js、store/modules/navbar.js
+    3、<li v-for="(item,index) in $store.state.city.list" :key="index">{{item}}</li>
+        如果报错undefined，需要停下项目，重新启动
+nuxtserverInit
