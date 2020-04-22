@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="236e563f-625d-4c19-9f08-8fd5d969be7a" name="Default Changelist" comment="feat:新增nuxt.js示例 + 笔记">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="236e563f-625d-4c19-9f08-8fd5d969be7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mt-app" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,7 +21,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/nuxt-learn2/server/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
+                <state relative-caret-position="475">
                   <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
                   <folding>
                     <element signature="e#0#21#0" expanded="true" />
@@ -46,8 +46,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/笔记/第六章/1、环境准备与项目安装.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="875">
-                  <caret line="35" column="14" selection-start-line="34" selection-start-column="12" selection-end-line="35" selection-end-column="14" />
+                <state relative-caret-position="673">
+                  <caret line="29" column="44" lean-forward="true" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
                 </state>
               </provider>
             </entry>
@@ -98,7 +98,13 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/mt-app" value="master" />
+      </map>
+    </option>
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--follow-tags" />
@@ -203,6 +209,7 @@
       <workItem from="1587019089825" duration="8029000" />
       <workItem from="1587364753497" duration="8507000" />
       <workItem from="1587527934448" duration="5814000" />
+      <workItem from="1587538956229" duration="1273000" />
     </task>
     <task id="LOCAL-00001" summary="feat:新增nuxt.js示例 + 笔记">
       <created>1587027089517</created>
@@ -246,14 +253,29 @@
       <option name="project" value="LOCAL" />
       <updated>1587537314621</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="删除空文件夹">
+      <created>1587538998418</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587538998418</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat:新增mt-app">
+      <created>1587539347312</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587539347312</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43608000" />
+    <option name="totallyTimeSpent" value="44881000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10958904" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -280,10 +302,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat:新增nuxt.js示例 + 笔记" />
     <MESSAGE value="feat:新增mt-app代码 + 第六章、环境准备与项目安装笔记" />
-    <MESSAGE value="feat:新增mt-app" />
     <MESSAGE value="feat:新增mt-app2" />
     <MESSAGE value="feat:新增mt-app-test" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:新增mt-app-test" />
+    <MESSAGE value="删除空文件夹" />
+    <MESSAGE value="feat:新增mt-app" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:新增mt-app" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/nuxt-learn/README.md" />
@@ -371,37 +394,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mt-app/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mt-app/layouts/default.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mt-app/components/Logo.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mt-app/server/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mt-app/pages/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mt-app/.babelrc" />
+    <entry file="file://$PROJECT_DIR$/mt-app/layouts/default.vue" />
+    <entry file="file://$PROJECT_DIR$/mt-app/components/Logo.vue" />
+    <entry file="file://$PROJECT_DIR$/mt-app/server/index.js" />
+    <entry file="file://$PROJECT_DIR$/mt-app/pages/index.vue" />
     <entry file="file://$PROJECT_DIR$/笔记/redis和session.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -443,20 +440,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mt-app/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mt-app/nuxt.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="55" column="27" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mt-app/package.json" />
+    <entry file="file://$PROJECT_DIR$/mt-app/nuxt.config.js" />
     <entry file="file://$PROJECT_DIR$/koa2-test/koa2-t1/middleware/koa-pv.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -466,7 +451,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nuxt-learn2/server/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="475">
           <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
@@ -488,17 +473,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/笔记/第六章/1、环境准备与项目安装.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="35" column="14" selection-start-line="34" selection-start-column="12" selection-end-line="35" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nuxt-learn2/server/interface/city.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/笔记/第六章/1、环境准备与项目安装.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="29" column="44" lean-forward="true" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
         </state>
       </provider>
     </entry>
