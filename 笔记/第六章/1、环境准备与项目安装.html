@@ -1,0 +1,43 @@
+实战准备：
+   环境准备
+   项目安装
+   辅助工具安装
+   配置改装
+
+一、环境准备
+    1、node : 8.12.0
+    2、vue : 2.5.17
+    3、npm : 6.4.1
+    4、webpack :4.19.1
+    5、nuxt : 2.0.0(最新版本)
+    备注：查看版本，node -v、 npm -v、 webpack -v（只有全局安装过webpack，才能使用该命令查看版本）
+
+二、项目安装
+    1、npm install -g npx
+    2、npx create-nuxt-app project-name
+
+三、配置改装
+    脚手架默认不支持 import 语法，解决办法：
+      1、在package.json文件里，scripts.dev,scripts.start，最后面增加 " --exec babel-node"。
+      2、新建.babelrc文件
+       {
+          "presets": ["es2015"]
+       }
+       3、npm i babel-core babel-preset-es2015 babel-cli
+
+     使用lang="sass"报错，解决办法：
+        1、npm install node-sass --save-dev
+        2、npm install sass-loader --save-dev
+
+    nuxt.config.js文件：
+        1、css:[
+            'element-ui/lib/theme-chalk/index.css',
+            'element-ui/lib/theme-chalk/reset.css',
+            '~assets/css/main.css',
+        ]
+
+四、辅助工具安装
+    1、mongoDB
+    2、redis
+    3、数据库可视化工具studio 3T
+
